@@ -1,0 +1,19 @@
+<div ng-controller="accueilController as vm">
+    <md-button class="md-fab position-button" aria-label="Add" ng-click="vm.showAdd($event)">
+        <md-icon md-svg-icon="content:ic_add_24px"></md-icon>
+    </md-button>
+    <div layout="column" ng-repeat="evenement in vm.evenements">
+
+        <div>
+            <h4>{{evenement.firstname}}</h4>
+        </div>
+        <div>
+            {{evenement.lastname}}
+        </div>
+        <div>
+            {{evenement.ville}}
+        </div>
+        <md-divider></md-divider>
+    </div>
+
+</div>
